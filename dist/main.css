@@ -2942,7 +2942,7 @@ html:not(.js) .reveal {
   display: inline-block;
   white-space: nowrap;
 }
-.logo.logo--text:hover { color: #ff2c2d; }
+/* hover colour change removed by request */
 @media (max-width: 1023px) {
   .logo.logo--text { font-size: 22px; }
 }
@@ -3020,9 +3020,25 @@ html:not(.js) .reveal {
 /* East 17 — text+ribbon vinyl on original .songs-vinyl (scroll-driven JS rotation) */
 .songs-vinyl__disc--text {
   background:
-    radial-gradient(circle at 30% 28%, rgba(255,255,255,0.10) 0%, transparent 35%),
-    repeating-radial-gradient(circle at center, #060606 0 5px, #0d0d0d 5px 6px),
-    radial-gradient(circle at center, #050505 0%, #000 100%) !important;
+    /* light sheen — two opposing soft wedges, like studio light on wax */
+    conic-gradient(from 128deg at 50% 50%,
+      transparent 0deg, rgba(255,255,255,0.085) 10deg, rgba(255,255,255,0.025) 24deg, transparent 38deg,
+      transparent 172deg, rgba(255,255,255,0.07) 186deg, rgba(255,255,255,0.02) 202deg, transparent 218deg),
+    /* dead wax around the label + track-separator rings + outer rim */
+    radial-gradient(circle closest-side at center,
+      #050505 0 20%, rgba(255,255,255,0.07) 20.2% 20.5%, transparent 20.7% 30%,
+      rgba(255,255,255,0.075) 30.2% 30.6%, transparent 30.8% 41%,
+      rgba(255,255,255,0.075) 41.2% 41.6%, transparent 41.8% 52%,
+      rgba(255,255,255,0.07) 52.2% 52.6%, transparent 52.8% 62%,
+      rgba(255,255,255,0.07) 62.2% 62.6%, transparent 62.8% 71%,
+      rgba(255,255,255,0.065) 71.2% 71.6%, transparent 71.8% 79%,
+      rgba(255,255,255,0.065) 79.2% 79.6%, transparent 79.8% 86%,
+      rgba(255,255,255,0.06) 86.2% 86.6%, transparent 86.8% 92%,
+      rgba(255,255,255,0.06) 92.2% 92.5%, transparent 92.7% 96.5%,
+      rgba(255,255,255,0.10) 96.7% 97%, #020202 97.2% 100%),
+    /* fine grooves */
+    repeating-radial-gradient(circle at center, #060606 0 2px, #101010 2px 3px, #090909 3px 4px),
+    radial-gradient(circle at center, #0b0b0b 0%, #030303 78%, #000 100%) !important;
   display: flex !important;
   align-items: center;
   justify-content: center;
