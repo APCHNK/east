@@ -35,6 +35,8 @@
 
 // The footer strip stays light, but $color-text went light with the East 17
 // dark conversion — force dark copy on the pink strip.
-footer.light-bg .footer-wrap span {
-  color: #1c1c1c;
+// !important + :not() chain to out-rank the blanket
+// `.light-bg :is(...) { color: #ededed !important }` rule from the dark conversion.
+footer.light-bg .footer-wrap span:not(.button):not([class*="button--"]):not(.player-track-name):not(.player-artist-name) {
+  color: #1c1c1c !important;
 }

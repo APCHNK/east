@@ -3087,4 +3087,4 @@ html:not(.js) .reveal {
 @media (max-width:860px){.text-block .headline .headline__image{max-width:200px;margin-left:auto;margin-right:auto}}
 
 /* footer strip is light — keep the copyright readable (dark) */
-footer.light-bg .footer-wrap span{color:#1c1c1c}
+footer.light-bg .footer-wrap span:not(.button):not([class*="button--"]):not(.player-track-name):not(.player-artist-name){color:#1c1c1c !important}
