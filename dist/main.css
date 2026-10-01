@@ -3132,3 +3132,8 @@ footer.light-bg .footer-wrap span:not(.button):not([class*="button--"]):not(.pla
     margin-right: 8px;
   }
 }
+
+.banner {
+  height: 100vh;
+  height: 100svh;
+}
