@@ -3110,3 +3110,25 @@ footer.light-bg .footer-wrap span:not(.button):not([class*="button--"]):not(.pla
     object-position: 50% 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .header-wrap .menu ul li a {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header-wrap .menu ul li a {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header-wrap .menu ul li a {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+  .header-wrap .header-extras {
+    gap: 6px;
+    margin-right: 8px;
+  }
+}
