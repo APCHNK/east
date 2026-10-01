@@ -1233,6 +1233,7 @@ header.open-menu .header-divider {
 @media (min-width: 1280px) {
   .banner .banner-img img {
     object-fit: cover;
+    width: 100%;
     height: 100%;
   }
 }
@@ -3104,3 +3105,8 @@ html:not(.js) .reveal {
 /* footer strip is light — keep the copyright readable (dark) */
 footer.light-bg .footer-wrap span:not(.button):not([class*="button--"]):not(.player-track-name):not(.player-artist-name){color:#1c1c1c !important}
 
+@media (min-width: 1441px) {
+  .banner .banner-img img {
+    object-position: 50% 0;
+  }
+}
