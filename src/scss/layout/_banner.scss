@@ -202,3 +202,14 @@
   height: 100vh;
   height: 100svh;
 }
+
+// Tablets: with the 100svh hero the centred photo pushed the artist off the
+// right edge; cover the box and frame the artist like on phones.
+@media (min-width: 768px) and (max-width: 1279px) {
+  .banner .banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% center;
+  }
+}
