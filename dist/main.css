@@ -3104,3 +3104,9 @@ html:not(.js) .reveal {
 
 /* footer strip is light — keep the copyright readable (dark) */
 footer.light-bg .footer-wrap span:not(.button):not([class*="button--"]):not(.player-track-name):not(.player-artist-name){color:#1c1c1c !important}
+
+@media (min-width: 1441px) {
+  .banner .banner-img img {
+    object-position: 50% 0;
+  }
+}
