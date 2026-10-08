@@ -317,3 +317,18 @@ add_filter('acf/format_value/name=footer_copyright', function ($value, $post_id,
 require_once get_template_directory() . '/inc/fix-translation-slugs.php';
 require_once get_template_directory() . '/inc/seo-front-translation.php';
 require_once get_template_directory() . '/inc/tour-dates-menu.php';
+require_once get_template_directory() . '/inc/site-seo.php';
+
+/** Site identity for inc/site-seo.php (schema graph, booking modal, Tour Dates page). */
+function satellite_site_config() {
+    return [
+        'brand'        => 'East 17',
+        'thanks'       => ['Thank you for your interest in East 17.', 'Спасибо за интерес к East 17.'],
+        'booking_slug' => 'contact',
+        'book_cta'     => ['Book East 17', 'Заказать East 17'],
+        'main'         => 'east-17',
+        'nodes'        => [
+            'east-17' => ['type' => 'MusicGroup', 'name' => 'East 17', 'page' => 'about-east-17', 'same_as_instagram' => true],
+        ],
+    ];
+}

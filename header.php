@@ -18,7 +18,7 @@
     <header class="spacing-xs header">
       <div class="columnar">
         <div class="header-wrap">
-          <a href="<?php echo esc_url(home_url('/')); ?>" class="logo logo--text">EAST 17</a>
+          <a href="<?php echo esc_url(function_exists('pll_home_url') ? pll_home_url() : home_url('/')); ?>" class="logo logo--text">EAST 17</a>
 
           <?php
           $insta_opts = get_field('instagram', 'option');
